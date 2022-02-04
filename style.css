@@ -1,0 +1,210 @@
+.layer1 {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 140px 1fr;
+}
+.up {
+  background-color: #00a783;
+}
+.down {
+  background-color: #e6e4df;
+}
+.bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1.5);
+  background-color: #f0f2f5;
+  width: 90%;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 0.9fr 2fr;
+  overflow: hidden;
+}
+.left-side {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  overflow: hidden;
+}
+.leftnav {
+  display: grid;
+  grid-template-rows: 1.2fr 1.8fr 1fr;
+}
+.leftnavup {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.leftnavcenter {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.leftnavcenter svg {
+  margin-left: 20px;
+  color: white;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  position: relative;
+}
+.leftnavdown {
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: white;
+}
+.searchback {
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+  background-color: #f0f2f5;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+}
+.searchback i {
+  font-size: 14px;
+  margin-top: 1px;
+}
+.downnav {
+  background-color: white;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  margin-left: 20px;
+}
+.right-side {
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.rightNav {
+  background-color: rgb(240, 242, 245);
+  border-left: 1px solid rgb(219, 219, 219);
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 9px 0px;
+  position: relative;
+}
+.rightNav svg {
+  justify-self: right;
+}
+.lost {
+  margin-right: 30px;
+}
+.rightcenter {
+  background-image: url(img/whatsappbg.png);
+  background-size: contain;
+  overflow-y: scroll;
+}
+.rightbottom {
+  padding: 0px 10px;
+  background-color: rgb(240, 242, 245);
+  border-left: 1px solid rgb(219, 219, 219);
+  display: grid;
+  grid-template-columns: 1fr 1fr 20fr 1fr;
+  align-items: center;
+  position: relative;
+}
+.rightbottom .input {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.chatbg {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid inline-grid;
+}
+
+.menu1 {
+  position: absolute;
+  background-color: white;
+  padding: 5px 0px;
+  display: grid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 230px;
+  top: 30px;
+  right: 20px;
+  z-index: 1;
+  opacity: 100%;
+  transform-origin: top right;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.menu1 h1 {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.menu1 h1:hover {
+  background-color: rgb(238, 238, 238);
+}
+.menu2 {
+  position: absolute;
+  background-color: white;
+  padding: 5px 0px;
+  display: grid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 230px;
+  top: 50px;
+  right: 40px;
+  z-index: 1;
+  opacity: 100%;
+  transform-origin: top right;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.menu2 h1 {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.menu2 h1:hover {
+  background-color: rgb(238, 238, 238);
+}
+.hide {
+  opacity: 0%;
+  transform-origin: top right;
+  transform: scale(0);
+}
+.svg {
+  display: grid;
+  gap: 10px;
+  position: absolute;
+  left: 35px;
+  bottom: 80px;
+}
+.svg svg {
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+.ani {
+  transform-origin: bottom;
+  transform: scale(0);
+}

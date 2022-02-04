@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css style -->
+
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- end -->
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end -->
+
+    <!-- fontawasom -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- end -->
+
+    <title>Whatsapp Clone</title>
+  </head>
+  <body>
+    <div class="layer1">
+      <div class="up"></div>
+      <div class="down"></div>
+    </div>
+    <div class="bg">
+      <!-- Left side -->
+      <div class="left-side">
+        <!-- leftnav -->
+        <div class="leftnav">
+          <div class="leftnavup" style="background-color: #f0f2f5">
+            <img class="profile" src="img/ben.jpg" alt="profile" />
+            <div class="icons">
+              <svg
+                version="1.1"
+                id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6"
+                x="0"
+                y="0"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z"
+                ></path>
+                <path
+                  fill="#009588"
+                  d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                ></path>
+              </svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                <path
+                  fill="currentColor"
+                  d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="open"
+                onclick="closeone()"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"
+                ></path>
+              </svg>
+              <div class="menu1 hide">
+                <h1>New group</h1>
+                <h1>Archived</h1>
+                <h1>Starred messages</h1>
+                <h1>Settings</h1>
+                <h1>Log out</h1>
+              </div>
+            </div>
+          </div>
+          <!-- left nav center -->
+          <div class="leftnavcenter" style="background-color: #53bdeb">
+            <svg viewBox="0 0 48 48" width="48" height="48" class="">
+              <path
+                fill="currentColor"
+                d="M24.154 2C11.919 2 2 11.924 2 24.165S11.919 46.33 24.154 46.33s22.154-9.924 22.154-22.165S36.389 2 24.154 2zm-.744 15.428v-.618c0-.706.618-1.324 1.324-1.324s1.323.618 1.323 1.324v.618c2.559.618 4.412 2.823 4.412 5.559v3.176l-8.294-8.294a5.056 5.056 0 0 1 1.235-.441zm1.323 15.706a1.77 1.77 0 0 1-1.765-1.765h3.529a1.768 1.768 0 0 1-1.764 1.765zm7.236-.883-1.765-1.765H17.233v-.882l1.765-1.765v-4.853a5.56 5.56 0 0 1 .794-2.912l-2.559-2.559 1.147-1.147 14.735 14.736-1.146 1.147z"
+              ></path>
+            </svg>
+            <div class="content">
+              <h2>Get notified of new messages</h2>
+              <h3>
+                Turn on desktop notifications <span class="bold">&rarr;</span>
+              </h3>
+            </div>
+          </div>
+          <div class="leftnavdown">
+            <div class="searchback">
+              <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                <path
+                  fill="currentColor"
+                  d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z"
+                ></path>
+              </svg>
+              <input type="text" placeholder="Search or start new chat" />
+            </div>
+          </div>
+        </div>
+        <!-- contacts -->
+        <section class="downnav">
+          <div class="conbox active">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+          <div class="conbox">
+            <div class="space">
+              <img class="profile2" src="img/customer-2.jpg" alt="profile" />
+            </div>
+            <div class="outline">
+              <div class="details">
+                <div class="left">
+                  <h1>Vicky Anna</h1>
+                  <h2 class="gray">Hello</h2>
+                </div>
+                <div class="rigth">
+                  <p>11:49 am</p>
+                </div>
+              </div>
+            </div>
+            <div class="empty"></div>
+          </div>
+        </section>
+      </div>
+      <!-- rightsite -->
+      <div class="right-side">
+        <div class="rightNav">
+          <img class="profile2" src="img/customer-2.jpg" alt="" />
+          <div class="content">
+            <h1>Vicky Anna</h1>
+            <p>last seen today at 4:30 pm</p>
+          </div>
+          <svg viewBox="0 0 24 24" width="24" height="24" class="">
+            <path
+              fill="currentColor"
+              d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"
+            ></path>
+          </svg>
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            class="lost"
+            onclick="closetwo()"
+          >
+            <path
+              fill="currentColor"
+              d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"
+            ></path>
+          </svg>
+          <div class="menu2 hide">
+            <h1>Contact info</h1>
+            <h1>Business details</h1>
+            <h1>Report business</h1>
+            <h1>Block</h1>
+            <h1>Select messages</h1>
+            <h1>Close chat</h1>
+            <h1>Mute notifications</h1>
+            <h1>Clear messages</h1>
+            <h1>Delete chat</h1>
+          </div>
+        </div>
+        <div class="rightcenter">
+          <div class="chatbg">
+            <div class="chat1">
+              <h2>Hi</h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>Hello</h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
+                quod.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                voluptas similique? Rerum nihil ipsa non? Labore amet
+                architecto.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia voluptatibus consectetur delectus adipisci doloribus,
+                doloremque minima facere reprehenderit sunt. Delectus nobis
+                soluta fugit quo esse velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>sit, amet consectetur adipisicing elit. Vel, quod.</h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                ut autem voluptas harum libero fuga aspernatur maiores soluta
+                dolores officia, officiis veritatis commodi. Quia temporibus
+                alias nisi quae optio.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                ipsum dolor sit, amet consectetur adipisicing elit. Vel, quod.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                amet consectetur adipisicing elit. Mollitia voluptatibus
+                consectetur delectus adipisci doloribus, doloremque minima
+                facere reprehenderit sunt. Delectus nobis soluta fugit quo esse
+                velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                voluptatibus consectetur delectus adipisci doloribus, doloremque
+                minima facere reprehenderit sunt. Delectus nobis soluta fugit
+                quo esse velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
+                quod.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                voluptas similique? Rerum nihil ipsa non? Labore amet
+                architecto.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia voluptatibus consectetur delectus adipisci doloribus,
+                doloremque minima facere reprehenderit sunt. Delectus nobis
+                soluta fugit quo esse velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
+                quod.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                voluptas similique? Rerum nihil ipsa non? Labore amet
+                architecto.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia voluptatibus consectetur delectus adipisci doloribus,
+                doloremque minima facere reprehenderit sunt. Delectus nobis
+                soluta fugit quo esse velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
+                quod.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                voluptas similique? Rerum nihil ipsa non? Labore amet
+                architecto.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia voluptatibus consectetur delectus adipisci doloribus,
+                doloremque minima facere reprehenderit sunt. Delectus nobis
+                soluta fugit quo esse velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
+                quod.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                voluptas similique? Rerum nihil ipsa non? Labore amet
+                architecto.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia voluptatibus consectetur delectus adipisci doloribus,
+                doloremque minima facere reprehenderit sunt. Delectus nobis
+                soluta fugit quo esse velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat1">
+              <h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
+                quod.
+              </h2>
+              <p>12:30</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                voluptas similique? Rerum nihil ipsa non? Labore amet
+                architecto.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+            <div class="chat2">
+              <h2>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia voluptatibus consectetur delectus adipisci doloribus,
+                doloremque minima facere reprehenderit sunt. Delectus nobis
+                soluta fugit quo esse velit, temporibus dolores quae dolorem.
+              </h2>
+              <p>12:31</p>
+            </div>
+            <br />
+          </div>
+        </div>
+        <div class="rightbottom">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            class="ekdr8vow dhq51u3o"
+          >
+            <path
+              fill="currentColor"
+              d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"
+            ></path>
+          </svg>
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            class="galary"
+            onclick="ani()"
+          >
+            <path
+              fill="currentColor"
+              d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"
+            ></path>
+          </svg>
+          <div class="svg">
+            <svg viewBox="0 0 53 53" width="53" height="53" class="show ani">
+              <defs>
+                <circle
+                  id="contact-SVGID_1_"
+                  cx="26.5"
+                  cy="26.5"
+                  r="25.5"
+                ></circle>
+              </defs>
+              <clipPath id="contact-SVGID_2_">
+                <use xlink:href="#contact-SVGID_1_" overflow="visible"></use>
+              </clipPath>
+              <g clip-path="url(#contact-SVGID_2_)">
+                <path
+                  fill="#0795DC"
+                  d="M26.5-1.1C11.9-1.1-1.1 5.6-1.1 27.6h55.2c-.1-19-13-28.7-27.6-28.7z"
+                ></path>
+                <path
+                  fill="#0EABF4"
+                  d="M53 26.5H-1.1c0 14.6 13 27.6 27.6 27.6s27.6-13 27.6-27.6H53z"
+                ></path>
+              </g>
+              <g fill="#F5F5F5">
+                <path
+                  id="svg-contact"
+                  d="M26.5 26.5A4.5 4.5 0 0 0 31 22a4.5 4.5 0 0 0-4.5-4.5A4.5 4.5 0 0 0 22 22a4.5 4.5 0 0 0 4.5 4.5Zm0 2.25c-3.004 0-9 1.508-9 4.5v1.125c0 .619.506 1.125 1.125 1.125h15.75c.619 0 1.125-.506 1.125-1.125V33.25c0-2.992-5.996-4.5-9-4.5Z"
+                ></path>
+              </g>
+            </svg>
+            <svg viewBox="0 0 53 53" width="53" height="53" class="show ani">
+              <defs>
+                <circle
+                  id="document-SVGID_1_"
+                  cx="26.5"
+                  cy="26.5"
+                  r="25.5"
+                ></circle>
+              </defs>
+              <clipPath id="document-SVGID_2_">
+                <use xlink:href="#document-SVGID_1_" overflow="visible"></use>
+              </clipPath>
+              <g clip-path="url(#document-SVGID_2_)">
+                <path
+                  fill="#5157AE"
+                  d="M26.5-1.1C11.9-1.1-1.1 5.6-1.1 27.6h55.2c-.1-19-13-28.7-27.6-28.7z"
+                ></path>
+                <path
+                  fill="#5F66CD"
+                  d="M53 26.5H-1.1c0 14.6 13 27.6 27.6 27.6s27.6-13 27.6-27.6H53z"
+                ></path>
+              </g>
+              <g fill="#F5F5F5">
+                <path
+                  id="svg-document"
+                  d="M29.09 17.09c-.38-.38-.89-.59-1.42-.59H20.5c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H32.5c1.1 0 2-.9 2-2V23.33c0-.53-.21-1.04-.59-1.41l-4.82-4.83zM27.5 22.5V18l5.5 5.5h-4.5c-.55 0-1-.45-1-1z"
+                ></path>
+              </g>
+            </svg>
+            <svg viewBox="0 0 53 53" width="53" height="53" class="show ani">
+              <defs>
+                <circle
+                  id="camera-SVGID_1_"
+                  cx="26.5"
+                  cy="26.5"
+                  r="25.5"
+                ></circle>
+              </defs>
+              <clipPath id="camera-SVGID_2_">
+                <use xlink:href="#camera-SVGID_1_" overflow="visible"></use>
+              </clipPath>
+              <g clip-path="url(#camera-SVGID_2_)">
+                <path
+                  fill="#D3396D"
+                  d="M26.5-1.1C11.9-1.1-1.1 5.6-1.1 27.6h55.2c-.1-19-13-28.7-27.6-28.7z"
+                ></path>
+                <path
+                  fill="#EC407A"
+                  d="M53 26.5H-1.1c0 14.6 13 27.6 27.6 27.6s27.6-13 27.6-27.6H53z"
+                ></path>
+                <path fill="#D3396D" d="M17 24.5h15v9H17z"></path>
+              </g>
+              <g fill="#F5F5F5">
+                <path
+                  id="svg-camera"
+                  d="M27.795 17a3 3 0 0 1 2.405 1.206l.3.403a3 3 0 0 0 2.405 1.206H34.2a2.8 2.8 0 0 1 2.8 2.8V32a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4v-9.385a2.8 2.8 0 0 1 2.8-2.8h1.295a3 3 0 0 0 2.405-1.206l.3-.403A3 3 0 0 1 25.205 17h2.59ZM26.5 22.25a5.25 5.25 0 1 0 .001 10.501A5.25 5.25 0 0 0 26.5 22.25Zm0 1.75a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z"
+                ></path>
+              </g>
+            </svg>
+            <svg
+              width="53"
+              height="53"
+              viewBox="0 0 53 53"
+              fill="none"
+              class="show ani"
+            >
+              <g clip-path="url(#clip0_850:74884)">
+                <circle cx="26.5" cy="26.5" r="26.5" fill="#0063CB"></circle>
+                <path
+                  d="M53 26.5C53 41.136 41.136 53 26.5 53S0 41.136 0 26.5h53Z"
+                  fill="#0070E6"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M36.002 22.17v4.32c-.24.321-.624.53-1.056.53H33.14a6.12 6.12 0 0 0-6.12 6.12v1.804c0 .434-.209.818-.532 1.058H22.17a5.17 5.17 0 0 1-5.17-5.17V22.17A5.17 5.17 0 0 1 22.17 17h8.662a5.17 5.17 0 0 1 5.17 5.17Zm-5.48 3.33.937-2.063 2.063-.937-2.063-.938-.937-2.062-.938 2.063-2.062.937 2.062.938.938 2.062Zm-7.022-3 1.406 3.094L28 27l-3.094 1.406L23.5 31.5l-1.406-3.094L19 27l3.094-1.406L23.5 22.5Z"
+                  fill="#F7F7F7"
+                ></path>
+                <path
+                  d="M34.946 28.52c.352 0 .69-.065 1-.183a3.87 3.87 0 0 1-1.078 2.088l-4.443 4.443a3.87 3.87 0 0 1-2.087 1.079 2.81 2.81 0 0 0 .184-1.003V33.14a4.62 4.62 0 0 1 4.62-4.62h1.804Z"
+                  fill="#F7F7F7"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_850:74884">
+                  <path fill="#fff" d="M0 0h53v53H0z"></path>
+                </clipPath>
+              </defs>
+            </svg>
+            <svg viewBox="0 0 53 53" width="53" height="53" class="show ani">
+              <defs>
+                <circle
+                  id="image-SVGID_1_"
+                  cx="26.5"
+                  cy="26.5"
+                  r="25.5"
+                ></circle>
+              </defs>
+              <clipPath id="image-SVGID_2_">
+                <use xlink:href="#image-SVGID_1_" overflow="visible"></use>
+              </clipPath>
+              <g clip-path="url(#image-SVGID_2_)">
+                <path
+                  fill="#AC44CF"
+                  d="M26.5-1.1C11.9-1.1-1.1 5.6-1.1 27.6h55.2c-.1-19-13-28.7-27.6-28.7z"
+                ></path>
+                <path
+                  fill="#BF59CF"
+                  d="M53 26.5H-1.1c0 14.6 13 27.6 27.6 27.6s27.6-13 27.6-27.6H53z"
+                ></path>
+                <path fill="#AC44CF" d="M17 24.5h18v9H17z"></path>
+              </g>
+              <g fill="#F5F5F5">
+                <path
+                  id="svg-image"
+                  d="M18.318 18.25h16.364c.863 0 1.727.827 1.811 1.696l.007.137v12.834c0 .871-.82 1.741-1.682 1.826l-.136.007H18.318a1.83 1.83 0 0 1-1.812-1.684l-.006-.149V20.083c0-.87.82-1.741 1.682-1.826l.136-.007h16.364Zm5.081 8.22-3.781 5.044c-.269.355-.052.736.39.736h12.955c.442-.011.701-.402.421-.758l-2.682-3.449a.54.54 0 0 0-.841-.011l-2.262 2.727-3.339-4.3a.54.54 0 0 0-.861.011Zm8.351-5.22a1.75 1.75 0 1 0 .001 3.501 1.75 1.75 0 0 0-.001-3.501Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <input class="input" type="text" placeholder=" Type a message" />
+          <svg viewBox="0 0 24 24" width="24" height="24" class="">
+            <path
+              fill="currentColor"
+              d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript link -->
+    <script src="script.js"></script>
+  </body>
+</html>
